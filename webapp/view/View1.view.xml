@@ -1,0 +1,59 @@
+<mvc:View controllerName="zkarthik_ui5zkarthik_ui5.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<App id="app">
+		<pages>
+			<Page title="Karthik Ui5">
+				<content>
+					<f:SimpleForm id="SimpleFormToolbar" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4"
+						labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"
+						singleContainerFullSize="false" ariaLabelledBy="Title1">
+						<f:content>
+							<Label text="Name"/>
+							<Input id="name" value=""/>
+							<Label text="Department"/>
+							<Input id="dept" value=""/>
+							<Label text="Roll Number"/>
+							<Input id="roll" value=""/>
+							<Label text="Phone Number"/>
+							<Input id="ph" value=""/>
+							<Label text="Placement Status"/>
+							<Input id="placed" value=""/>
+						</f:content>
+					</f:SimpleForm>
+					<Button text="Submit" press="onadd" type="Default"></Button>
+					<Button text="Table" press="onnext" type="Default"></Button>
+					<Table id="idstutable" items="{/}">
+						<columns>
+							<Column width="12em">
+								<Text text="Name"/>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Department"/>
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+								<Text text="Roll Number"/>
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+								<Text text="Phone Number"/>
+							</Column>
+							<Column hAlign="End">
+								<Text text="Placement Status"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem vAlign="Middle">
+								<cells>
+									<Text text="{name}"/>
+									<Text text="{dept}"/>
+									<Text text="{roll}"/>
+									<Text text="{ph}"/>
+									<Text text="{placed}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,39 @@
+{
+    "collegelist":[{
+        "name": "Karthik",
+        "dept": "Mechanical",
+        "roll": "4036",
+        "ph": "9025153558",
+        "placed": "yes"
+    },
+    {
+        "name": "Jeni",
+        "dept": "CSE",
+        "roll": "4039",
+        "ph": "9036246899",
+        "placed": "yes"
+    },
+    {
+        "name": "Ashwin",
+        "dept": "ECE",
+        "roll": "4040",
+        "ph": "89028362820",
+        "placed": "no"
+    },
+    {
+        "name": "Vignesh",
+        "dept": "EEE",
+        "roll": "4086",
+        "ph": "9282628201",
+        "placed": "no"
+    },
+    {
+        "name": "Pursoth",
+        "dept": "Mechanical",
+        "roll": "4026",
+        "ph": "90778252782",
+        "placed": "yes"
+    }
+    ]
+}
+
